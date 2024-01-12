@@ -1,0 +1,200 @@
+
+
+
+
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("sections/about-us.css");
+@import url("sections/content-images.css");
+@import url("sections/testimonials.css");
+@import url("sections/image-gallery.css");
+@import url("sections/footer.css");
+
+
+:root {
+
+  --barlow-sans : 'Barlow', sans-serif;
+  --fraunces : 'Fraunces', serif;
+
+
+    --color-soft-red : hsl(7, 99%, 70%);
+    --color-yellow : hsl(51, 100%, 49%);
+
+    /* For Graphic Design Text */
+    --color-cyan : hsl(167, 40%, 24%);
+    /* PhotoGraphy Text */
+    --color-dark-blue : hsl(198, 62%, 26%);
+    /* Footer */
+    --color-dark-cyan : hsl(168, 34%, 41%);
+    --color-white : hsl(0, 0%, 100%);
+
+    --color-dark-desaturated-blue: hsl(212, 27%, 19%);
+
+    --color-grayish-blue : hsl(210, 4%, 67%);
+    --color-very-light-pink : hsl(7, 60%, 97%);
+
+    /* color for footer */
+    --color-dark-moderate-cyan : hsl(168, 45%, 68%);
+
+
+
+  }
+
+
+  img {
+
+    display: block;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+  }
+
+
+  body {
+
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #FCF4F3;
+
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  li a {
+
+    text-decoration: none;
+    color: inherit;
+
+  }
+
+  /* Media Queries */
+
+
+  @media only screen and (max-width : 750px){
+
+    /* Hero Image */
+
+    .header {
+
+      background-image: url("../images/mobile/image-header.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+
+    .header__title {
+
+      font-size: 40px;
+
+    }
+
+
+
+    /* About us rows images and content responsiveness */
+    
+    .about-us__row {
+
+      flex-direction: column;
+    
+    }
+
+    .about-us__content-wrapper {
+
+      padding: 64px 0;
+
+    }
+
+    .about-us__row:nth-child(1) {
+      flex-direction: column-reverse;
+    }
+
+
+    img[alt="egg-image"] {
+
+      content : url("../images/mobile/image-transform.jpg");
+
+    }
+
+    img[alt="stand-out"] {
+      
+      content : url("../images/mobile/image-stand-out.jpg");
+
+    }
+
+    /* End About Section */
+
+    /* Graphic design and photographic section */
+
+    .content-image__row {
+
+      flex-direction: column;
+
+    }
+
+    img[alt="graphic-design"] {
+
+      content: url("../images/mobile/image-graphic-design.jpg");
+
+    }
+
+    img[alt="photography"] {
+
+      content: url("../images/mobile/image-photography.jpg");
+
+    }
+
+
+
+    /* Image Gallery section */
+
+    img[alt="milk_bottles"] {
+      content : url("../images/mobile/image-gallery-milkbottles.jpg")
+    }
+
+
+    img[alt="orange_image"] {
+
+      content : url("../images/mobile/image-gallery-orange.jpg")
+
+    }
+
+    img[alt="Ice_cream_cone_image"] {
+      content : url("../images/mobile/image-gallery-cone.jpg")
+    }
+
+    img[alt="sugar_cubes"] {
+      content : url("../images/mobile/image-gallery-sugar-cubes.jpg")
+    }
+
+
+    .images__row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .images__row img {
+      width: 50%;
+    }
+
+
+
+
+
+
+
+
+
+  }

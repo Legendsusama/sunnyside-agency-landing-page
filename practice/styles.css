@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.arrow-box {
+    position: relative;
+    width: 200px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin: 50px;
+}
+
+.arrow-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 40px 40px 0; /* Adjust these values to change the size of the arrow */
+    border-color: transparent #333 transparent transparent;
+}

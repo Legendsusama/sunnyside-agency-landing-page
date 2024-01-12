@@ -1,0 +1,15 @@
+
+
+
+.images__row {
+    display: flex;
+    width: 100%;
+}
+
+.images__row img {
+
+    object-fit: contain;
+    object-position: center;
+    width: 25%;
+    
+}
